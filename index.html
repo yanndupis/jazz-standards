@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<!doctype html>
+<html>
+  <head>
+    <title>Top 50 Jazz Standards</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+                * {
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+
+                body {
+                    font-family: 'Georgia', serif;
+                    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+                    color: #333;
+                    line-height: 1.6;
+                    padding: 20px;
+                }
+
+                .container {
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    background: #fff;
+                    border-radius: 10px;
+                    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+                    padding: 40px;
+                }
+
+                .header {
+                    text-align: center;
+                    margin-bottom: 50px;
+                    padding-bottom: 30px;
+                    border-bottom: 3px solid #1e3c72;
+                }
+
+                .header h1 {
+                    font-size: 3em;
+                    color: #1e3c72;
+                    margin-bottom: 10px;
+                    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+                }
+
+                .header p {
+                    font-size: 1.2em;
+                    color: #666;
+                    font-style: italic;
+                }
+
+                .song-card {
+                    background: #f9f9f9;
+                    border-radius: 8px;
+                    padding: 30px;
+                    margin-bottom: 40px;
+                    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+                    transition: transform 0.3s ease, box-shadow 0.3s ease;
+                }
+
+                .song-card:hover {
+                    transform: translateY(-5px);
+                    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+                }
+
+                .song-header {
+                    margin-bottom: 20px;
+                }
+
+                .song-title {
+                    color: #1e3c72;
+                    font-size: 2em;
+                    margin-bottom: 10px;
+                }
+
+                .song-info {
+                    color: #666;
+                    font-size: 1em;
+                    font-style: italic;
+                }
+
+                .video-container {
+                    margin: 20px 0;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+                }
+
+                .youtube-video {
+                    display: block;
+                    border-radius: 8px;
+                }
+
+                .lyrics-section {
+                    margin-top: 20px;
+                    padding: 20px;
+                    background: #fff;
+                    border-radius: 8px;
+                    border-left: 4px solid #1e3c72;
+                }
+
+                .lyrics-header {
+                    color: #1e3c72;
+                    margin-bottom: 10px;
+                }
+
+                .lyrics-note {
+                    color: #666;
+                    line-height: 1.8;
+                }
+
+                .lyrics-note a {
+                    color: #2a5298;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+
+                .lyrics-note a:hover {
+                    color: #1e3c72;
+                    text-decoration: underline;
+                }
+
+                .toc {
+                    background: #f0f4f8;
+                    padding: 25px;
+                    border-radius: 8px;
+                    margin-bottom: 40px;
+                }
+
+                .toc h2 {
+                    color: #1e3c72;
+                    margin-bottom: 15px;
+                }
+
+                .toc-grid {
+                    display: grid;
+                    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+                    gap: 10px;
+                }
+
+                .toc-item {
+                    padding: 8px;
+                    background: white;
+                    border-radius: 4px;
+                    transition: background 0.2s;
+                }
+
+                .toc-item:hover {
+                    background: #e8f0ff;
+                }
+
+                .toc-item a {
+                    color: #2a5298;
+                    text-decoration: none;
+                    font-size: 0.95em;
+                }
+
+                .toc-item a:hover {
+                    text-decoration: underline;
+                }
+
+                @media (max-width: 768px) {
+                    .container {
+                        padding: 20px;
+                    }
+
+                    .header h1 {
+                        font-size: 2em;
+                    }
+
+                    .song-title {
+                        font-size: 1.5em;
+                    }
+
+                    .toc-grid {
+                        grid-template-columns: 1fr;
+                    }
+                }
+            </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🎺 Top 50 Jazz Standards 🎵</h1>
+        <p>A curated collection of the most iconic jazz standards of all time</p>
+      </div>
+      <div class="toc">
+        <h2>Quick Navigation</h2>
+        <div class="toc-grid">
+          <div class="toc-item">
+<a href="#song-1">1. Autumn Leaves</a>          </div>
+          <div class="toc-item">
+<a href="#song-2">2. All of Me</a>          </div>
+          <div class="toc-item">
+<a href="#song-3">3. All the Things You Are</a>          </div>
+          <div class="toc-item">
+<a href="#song-4">4. Blue Bossa</a>          </div>
+          <div class="toc-item">
+<a href="#song-5">5. Blue Monk</a>          </div>
+          <div class="toc-item">
+<a href="#song-6">6. Body and Soul</a>          </div>
+          <div class="toc-item">
+<a href="#song-7">7. Bye Bye Blackbird</a>          </div>
+          <div class="toc-item">
+<a href="#song-8">8. Caravan</a>          </div>
+          <div class="toc-item">
+<a href="#song-9">9. Cantaloupe Island</a>          </div>
+          <div class="toc-item">
+<a href="#song-10">10. Cherokee</a>          </div>
+          <div class="toc-item">
+<a href="#song-11">11. Come Rain or Come Shine</a>          </div>
+          <div class="toc-item">
+<a href="#song-12">12. Confirmation</a>          </div>
+          <div class="toc-item">
+<a href="#song-13">13. Days of Wine and Roses</a>          </div>
+          <div class="toc-item">
+<a href="#song-14">14. Don't Get Around Much Anymore</a>          </div>
+          <div class="toc-item">
+<a href="#song-15">15. Donna Lee</a>          </div>
+          <div class="toc-item">
+<a href="#song-16">16. Embraceable You</a>          </div>
+          <div class="toc-item">
+<a href="#song-17">17. Fly Me to the Moon</a>          </div>
+          <div class="toc-item">
+<a href="#song-18">18. Footprints</a>          </div>
+          <div class="toc-item">
+<a href="#song-19">19. Georgia on My Mind</a>          </div>
+          <div class="toc-item">
+<a href="#song-20">20. Giant Steps</a>          </div>
+          <div class="toc-item">
+<a href="#song-21">21. Girl from Ipanema</a>          </div>
+          <div class="toc-item">
+<a href="#song-22">22. How High the Moon</a>          </div>
+          <div class="toc-item">
+<a href="#song-23">23. I Got Rhythm</a>          </div>
+          <div class="toc-item">
+<a href="#song-24">24. I'll Remember April</a>          </div>
+          <div class="toc-item">
+<a href="#song-25">25. In a Sentimental Mood</a>          </div>
+          <div class="toc-item">
+<a href="#song-26">26. It Could Happen to You</a>          </div>
+          <div class="toc-item">
+<a href="#song-27">27. Just Friends</a>          </div>
+          <div class="toc-item">
+<a href="#song-28">28. Maiden Voyage</a>          </div>
+          <div class="toc-item">
+<a href="#song-29">29. Misty</a>          </div>
+          <div class="toc-item">
+<a href="#song-30">30. My Favorite Things</a>          </div>
+          <div class="toc-item">
+<a href="#song-31">31. My Funny Valentine</a>          </div>
+          <div class="toc-item">
+<a href="#song-32">32. Night and Day</a>          </div>
+          <div class="toc-item">
+<a href="#song-33">33. On Green Dolphin Street</a>          </div>
+          <div class="toc-item">
+<a href="#song-34">34. Oleo</a>          </div>
+          <div class="toc-item">
+<a href="#song-35">35. Over the Rainbow</a>          </div>
+          <div class="toc-item">
+<a href="#song-36">36. Perdido</a>          </div>
+          <div class="toc-item">
+<a href="#song-37">37. Recorda Me</a>          </div>
+          <div class="toc-item">
+<a href="#song-38">38. Round Midnight</a>          </div>
+          <div class="toc-item">
+<a href="#song-39">39. Satin Doll</a>          </div>
+          <div class="toc-item">
+<a href="#song-40">40. So What</a>          </div>
+          <div class="toc-item">
+<a href="#song-41">41. Solar</a>          </div>
+          <div class="toc-item">
+<a href="#song-42">42. Someday My Prince Will Come</a>          </div>
+          <div class="toc-item">
+<a href="#song-43">43. Stella by Starlight</a>          </div>
+          <div class="toc-item">
+<a href="#song-44">44. Summertime</a>          </div>
+          <div class="toc-item">
+<a href="#song-45">45. Take Five</a>          </div>
+          <div class="toc-item">
+<a href="#song-46">46. Take the A Train</a>          </div>
+          <div class="toc-item">
+<a href="#song-47">47. There Will Never Be Another You</a>          </div>
+          <div class="toc-item">
+<a href="#song-48">48. The Nearness of You</a>          </div>
+          <div class="toc-item">
+<a href="#song-49">49. Tune Up</a>          </div>
+          <div class="toc-item">
+<a href="#song-50">50. Wave</a>          </div>
+        </div>
+      </div>
+      <div id="song-1" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">1. Autumn Leaves</h2>
+          <p class="song-info">Composer: Joseph Kosma • Year: 1945</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/rsz6TE6t6-M" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Autumn%20Leaves%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Autumn%20Leaves" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-2" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">2. All of Me</h2>
+          <p class="song-info">Composer: Gerald Marks &amp; Seymour Simons • Year: 1931</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/mQR0bXO_yI8" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=All%20of%20Me%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/All%20of%20Me" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-3" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">3. All the Things You Are</h2>
+          <p class="song-info">Composer: Jerome Kern • Year: 1939</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/8FsLSdRDrnM" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=All%20the%20Things%20You%20Are%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/All%20the%20Things%20You%20Are" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-4" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">4. Blue Bossa</h2>
+          <p class="song-info">Composer: Kenny Dorham • Year: 1963</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/WZod5FZy2kg" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Blue%20Bossa%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Blue%20Bossa" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-5" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">5. Blue Monk</h2>
+          <p class="song-info">Composer: Thelonious Monk • Year: 1954</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/vFHV8VsCbt8" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Blue%20Monk%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Blue%20Monk" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-6" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">6. Body and Soul</h2>
+          <p class="song-info">Composer: Johnny Green • Year: 1930</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/Y4XDrGCcYkU" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Body%20and%20Soul%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Body%20and%20Soul" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-7" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">7. Bye Bye Blackbird</h2>
+          <p class="song-info">Composer: Ray Henderson • Year: 1926</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/6wIbYhWrR-0" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Bye%20Bye%20Blackbird%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Bye%20Bye%20Blackbird" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-8" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">8. Caravan</h2>
+          <p class="song-info">Composer: Duke Ellington • Year: 1936</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/aJoo79OwZEI" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Caravan%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Caravan" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-9" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">9. Cantaloupe Island</h2>
+          <p class="song-info">Composer: Herbie Hancock • Year: 1964</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/8B1oIXGX0Io" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Cantaloupe%20Island%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Cantaloupe%20Island" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-10" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">10. Cherokee</h2>
+          <p class="song-info">Composer: Ray Noble • Year: 1938</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/2c5dRGj2x6U" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Cherokee%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Cherokee" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-11" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">11. Come Rain or Come Shine</h2>
+          <p class="song-info">Composer: Harold Arlen • Year: 1946</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/eHFa99iS6ps" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Come%20Rain%20or%20Come%20Shine%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Come%20Rain%20or%20Come%20Shine" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-12" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">12. Confirmation</h2>
+          <p class="song-info">Composer: Charlie Parker • Year: 1946</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/KNcHnEwGv8c" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Confirmation%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Confirmation" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-13" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">13. Days of Wine and Roses</h2>
+          <p class="song-info">Composer: Henry Mancini • Year: 1962</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/CgwVWyxhwDM" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Days%20of%20Wine%20and%20Roses%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Days%20of%20Wine%20and%20Roses" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-14" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">14. Don't Get Around Much Anymore</h2>
+          <p class="song-info">Composer: Duke Ellington • Year: 1940</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/J86atk1k4ZM" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Don't%20Get%20Around%20Much%20Anymore%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Don't%20Get%20Around%20Much%20Anymore" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-15" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">15. Donna Lee</h2>
+          <p class="song-info">Composer: Charlie Parker • Year: 1947</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/4Qb4ImxVxRA" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Donna%20Lee%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Donna%20Lee" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-16" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">16. Embraceable You</h2>
+          <p class="song-info">Composer: George Gershwin • Year: 1928</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/HW-RpUHDfl8" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Embraceable%20You%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Embraceable%20You" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-17" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">17. Fly Me to the Moon</h2>
+          <p class="song-info">Composer: Bart Howard • Year: 1954</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/ZEcqHA7dbwM" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Fly%20Me%20to%20the%20Moon%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Fly%20Me%20to%20the%20Moon" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-18" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">18. Footprints</h2>
+          <p class="song-info">Composer: Wayne Shorter • Year: 1966</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/HQDm92c3v9g" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Footprints%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Footprints" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-19" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">19. Georgia on My Mind</h2>
+          <p class="song-info">Composer: Hoagy Carmichael • Year: 1930</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/fRgWBN8yt_E" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Georgia%20on%20My%20Mind%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Georgia%20on%20My%20Mind" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-20" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">20. Giant Steps</h2>
+          <p class="song-info">Composer: John Coltrane • Year: 1959</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/30FTr6G53VU" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Giant%20Steps%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Giant%20Steps" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-21" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">21. Girl from Ipanema</h2>
+          <p class="song-info">Composer: Antonio Carlos Jobim • Year: 1962</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/UJkxFhFRFDA" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Girl%20from%20Ipanema%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Girl%20from%20Ipanema" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-22" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">22. How High the Moon</h2>
+          <p class="song-info">Composer: Morgan Lewis • Year: 1940</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/xScKFHRUKhA" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=How%20High%20the%20Moon%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/How%20High%20the%20Moon" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-23" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">23. I Got Rhythm</h2>
+          <p class="song-info">Composer: George Gershwin • Year: 1930</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/VAOWg6R5q_I" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=I%20Got%20Rhythm%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/I%20Got%20Rhythm" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-24" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">24. I'll Remember April</h2>
+          <p class="song-info">Composer: Gene de Paul • Year: 1941</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/rz7QXdGVX0k" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=I'll%20Remember%20April%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/I'll%20Remember%20April" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-25" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">25. In a Sentimental Mood</h2>
+          <p class="song-info">Composer: Duke Ellington • Year: 1935</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/sCQfTNOC5aE" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=In%20a%20Sentimental%20Mood%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/In%20a%20Sentimental%20Mood" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-26" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">26. It Could Happen to You</h2>
+          <p class="song-info">Composer: Jimmy Van Heusen • Year: 1944</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/s8yAyOgV_hw" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=It%20Could%20Happen%20to%20You%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/It%20Could%20Happen%20to%20You" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-27" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">27. Just Friends</h2>
+          <p class="song-info">Composer: John Klenner • Year: 1931</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/lv51EjH79WA" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Just%20Friends%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Just%20Friends" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-28" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">28. Maiden Voyage</h2>
+          <p class="song-info">Composer: Herbie Hancock • Year: 1965</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/hwmRQ0PBtXU" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Maiden%20Voyage%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Maiden%20Voyage" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-29" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">29. Misty</h2>
+          <p class="song-info">Composer: Erroll Garner • Year: 1954</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/P9uxEZl2sec" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Misty%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Misty" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-30" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">30. My Favorite Things</h2>
+          <p class="song-info">Composer: Richard Rodgers • Year: 1959</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/qWG2dsXV5HI" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=My%20Favorite%20Things%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/My%20Favorite%20Things" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-31" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">31. My Funny Valentine</h2>
+          <p class="song-info">Composer: Richard Rodgers • Year: 1937</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/jRdkrDk0BQ0" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=My%20Funny%20Valentine%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/My%20Funny%20Valentine" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-32" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">32. Night and Day</h2>
+          <p class="song-info">Composer: Cole Porter • Year: 1932</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/9CjPVyvSn9A" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Night%20and%20Day%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Night%20and%20Day" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-33" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">33. On Green Dolphin Street</h2>
+          <p class="song-info">Composer: Bronisław Kaper • Year: 1947</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/EyYzXB2ta8w" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=On%20Green%20Dolphin%20Street%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/On%20Green%20Dolphin%20Street" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-34" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">34. Oleo</h2>
+          <p class="song-info">Composer: Sonny Rollins • Year: 1954</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/P_NCYYBnXos" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Oleo%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Oleo" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-35" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">35. Over the Rainbow</h2>
+          <p class="song-info">Composer: Harold Arlen • Year: 1939</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/PSZxmZmBfnU" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Over%20the%20Rainbow%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Over%20the%20Rainbow" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-36" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">36. Perdido</h2>
+          <p class="song-info">Composer: Juan Tizol • Year: 1942</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/3GaOj2rCJyE" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Perdido%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Perdido" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-37" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">37. Recorda Me</h2>
+          <p class="song-info">Composer: Joe Henderson • Year: 1963</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/nJ4cE5PoKhk" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Recorda%20Me%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Recorda%20Me" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-38" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">38. Round Midnight</h2>
+          <p class="song-info">Composer: Thelonious Monk • Year: 1944</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/vSjS4d72RU0" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Round%20Midnight%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Round%20Midnight" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-39" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">39. Satin Doll</h2>
+          <p class="song-info">Composer: Duke Ellington • Year: 1953</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/E5EGOezNgkw" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Satin%20Doll%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Satin%20Doll" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-40" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">40. So What</h2>
+          <p class="song-info">Composer: Miles Davis • Year: 1959</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/zqNTltOGh5c" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=So%20What%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/So%20What" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-41" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">41. Solar</h2>
+          <p class="song-info">Composer: Miles Davis • Year: 1954</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/1rTBp5eoFTY" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Solar%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Solar" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-42" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">42. Someday My Prince Will Come</h2>
+          <p class="song-info">Composer: Frank Churchill • Year: 1937</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/4tAi-lu4-2w" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Someday%20My%20Prince%20Will%20Come%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Someday%20My%20Prince%20Will%20Come" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-43" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">43. Stella by Starlight</h2>
+          <p class="song-info">Composer: Victor Young • Year: 1944</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/GhaYWk4_fSM" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Stella%20by%20Starlight%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Stella%20by%20Starlight" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-44" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">44. Summertime</h2>
+          <p class="song-info">Composer: George Gershwin • Year: 1935</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/MIDOEeKvsLU" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Summertime%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Summertime" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-45" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">45. Take Five</h2>
+          <p class="song-info">Composer: Paul Desmond • Year: 1959</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/vmDDOFXSgAs" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Take%20Five%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Take%20Five" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-46" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">46. Take the A Train</h2>
+          <p class="song-info">Composer: Billy Strayhorn • Year: 1939</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/cb2w2m1JmCY" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Take%20the%20A%20Train%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Take%20the%20A%20Train" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-47" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">47. There Will Never Be Another You</h2>
+          <p class="song-info">Composer: Harry Warren • Year: 1942</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/uGfHbxWEPPs" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=There%20Will%20Never%20Be%20Another%20You%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/There%20Will%20Never%20Be%20Another%20You" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-48" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">48. The Nearness of You</h2>
+          <p class="song-info">Composer: Hoagy Carmichael • Year: 1938</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/GnEmD17kYsE" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=The%20Nearness%20of%20You%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/The%20Nearness%20of%20You" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-49" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">49. Tune Up</h2>
+          <p class="song-info">Composer: Miles Davis • Year: 1953</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/Cdf0wSPJ7Pk" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Tune%20Up%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Tune%20Up" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+      <div id="song-50" class="song-card">
+        <div class="song-header">
+          <h2 class="song-title">50. Wave</h2>
+          <p class="song-info">Composer: Antonio Carlos Jobim • Year: 1967</p>
+        </div>
+        <div class="video-container">
+<iframe src="https://www.youtube.com/embed/bZv6d-IJDzE" width="100%" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="youtube-video"></iframe>        </div>
+        <div class="lyrics-section">
+          <h3 class="lyrics-header">Lyrics</h3>
+          <p class="lyrics-note">
+For licensed lyrics, please visit: <a href="https://genius.com/search?q=Wave%20jazz" target="_blank">Genius Lyrics</a> or <a href="https://www.musixmatch.com/search/Wave" target="_blank">Musixmatch</a>          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
